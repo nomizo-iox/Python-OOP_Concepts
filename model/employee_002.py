@@ -4,7 +4,7 @@ class Employee:
     # All the variables in this class are considered INSTANCE VARIABLES
 
     def __init__(self, first, last, pay):
-        # self.first, self.last, self.pay, self.pay, self.email, are all attributes of a class.
+        # self.first, self.last, self.pay, self.pay, self.email, are all attributes of a class. Also INSTANFE VARIABLES
 
         self.first = first
         self.last = last
