@@ -1,10 +1,14 @@
+# Self keyword, Init method
+
 class Employee:
-    # Same as a Constructor in Java.
-    # When creating the init method in Python, it receives the first Instance as an argument automatically (self).
+    """ Init method in Python, is same as a Constructor in Java. 
+    When creating the init method in Python, 
+    it receives the first Instance as an argument automatically (self)."""
     # All the variables in this class are considered INSTANCE VARIABLES
 
     def __init__(self, first, last, pay):
-        # self.first, self.last, self.pay, self.pay, self.email, are all attributes of a class. Also INSTANFE VARIABLES
+        """ self.first, self.last, self.pay, self.pay, self.email, 
+        are all attributes of a class. Also INSTANFE VARIABLES."""
 
         self.first = first
         self.last = last
@@ -25,8 +29,14 @@ print(emp_2.email)
 # We could keep calling first and last name like this.
 print('{} {}'.format(emp_1.first, emp_1.last))
 
-# The 'self' keyword is needed in order to get the results of the 'emp_1' Instance.  TOP is same as BOTTOM
+"""
+The 'self' keyword is needed in order to get the results of the 'emp_1' Instance.  
+TOP is same as BOTTOM
+"""
 print(emp_1.fullname())
 
-# The 'self' keyword is  needed in order to get the results of the 'emp_1' Instance BOTTOM is same as TOP
+"""
+The 'self' keyword is  needed in order to get the results of the 'emp_1' Instance. 
+BOTTOM is same as TOP
+"""
 print(Employee.fullname(emp_1))
